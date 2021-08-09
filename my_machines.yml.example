@@ -1,0 +1,25 @@
+winderp:
+    os: windows_2019
+    bootstrap: true
+    bootstrap_file: bootstrap/powershell.tpl
+    size: t3a.medium
+    security_groups:
+        - rdp_mgmt
+        - victim_private
+
+# attacker:
+#     os: kali_2021_1
+#     bootstrap: false
+#     bootstrap_file: null
+#     size: t3a.small
+#     security_groups:
+#         - ssh_mgmt
+
+jw_centos7:
+    os: centos7
+    bootstrap: true
+    bootstrap_file: bootstrap/linux.tpl
+    size: t3a.medium
+    security_groups:
+        - ssh_mgmt
+        - victim_private
